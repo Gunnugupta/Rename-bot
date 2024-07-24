@@ -7,10 +7,11 @@ import random
 from helper.txt import mr
 from helper.database import db
 from config import START_PIC, FLOOD, ADMIN 
-
+from utils import react_msg
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
+    async def react_msg(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
