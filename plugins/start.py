@@ -19,15 +19,15 @@ async def start(client, message):
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/WebXBots'),
-        InlineKeyboardButton(' Support', url='https://t.me/Web_X_Support')
+        InlineKeyboardButton(' Updates', url='https://t.me/moviesworldupdates'),
+        InlineKeyboardButton(' Support', url='https://t.me/moviesworldsupportzone')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/DCinemasz')
+        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/moviesworldupdates')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@Divin_Dass')
+        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/')
         ]
         ])
     if START_PIC:
@@ -73,15 +73,15 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/WebXBots'),
-        InlineKeyboardButton(' Support', url='https://t.me/Web_X_Support')
+        InlineKeyboardButton(' Updates', url='https://t.me/moviesworldupdates'),
+        InlineKeyboardButton(' Support', url='https://t.me/moviesworldsupportzone')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/DCinemasz')
+        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/moviesworldupdates')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@Divin_Dass')
+        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/')
         ]
         ]
                 )
@@ -90,7 +90,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/DCinemasz")
+               InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/moviesworldupdates")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
